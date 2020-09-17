@@ -1,0 +1,14 @@
+def xo(s):
+    s=s.lower()
+    res = s.find("x")
+    res1 = s.find("o")
+    a = s.count("x")
+    b = s.count("o")
+    if a==b:
+        return True
+    elif a>b or b>a:
+        return False
+    elif res == 0 and res1 == 0:
+        return True 
+    else:
+        return True
